@@ -10,7 +10,7 @@ export default function Contacts({ contacts, changeChat }) {
     const data = await JSON.parse(
       localStorage.getItem("chat-app-current-user")
     );
-    setCurrentUserName(data.username);
+    setCurrentUserName("pankaj_777");
     setCurrentUserImage(data.avatarImage);
   }, []);
   const changeCurrentChat = (index, contact) => {
